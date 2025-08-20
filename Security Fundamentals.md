@@ -1,9 +1,6 @@
 # 🛡️ Security Fundamentals: The Foundation of Cyber Defense
 
 ---
-
-Welcome to the foundational module of the Cyber Analyst Notebook. This document is designed to provide a comprehensive overview of the core principles and concepts essential for anyone aspiring to become a successful cybersecurity professional. We will explore not only the technical aspects but also the critical soft skills that define a resilient and effective analyst.
-
 ---
 
 ## 🧠 Soft Skills: The Human Element
