@@ -1,6 +1,5 @@
 # 🎣 Phishing Analysis
 
----
 
 ## ✉️ Introduction to Phishing and Emails
 
