@@ -119,26 +119,3 @@ Digital forensics is the science of discovering, analyzing, and preserving digit
 
 > **SOC TIP:**  
 > Always validate your findings, document every step, and stay up-to-date with forensic frameworks and legal requirements. Practice with real-world scenarios in labs to keep your skills sharp.
-
-<style>
-body {
-  font-family: 'Segoe UI', 'Roboto', 'Arial', sans-serif;
-  font-size: 18px;
-  line-height: 1.7;
-  color: #222;
-  background: #f9fafb;
-}
-h1, h2, h3 { color: #1a237e; font-family: 'Segoe UI', 'Roboto', sans-serif; }
-code, pre { background: #f4f4f4; color: #d32f2f; }
-table {
-  border-collapse: collapse;
-  width: 100%;
-  margin: 1em 0;
-}
-th, td {
-  border: 1px solid #bdbdbd;
-  padding: 8px 12px;
-  text-align: left;
-}
-tr:nth-child(even) { background: #f5f5f5; }
-</style>
