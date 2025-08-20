@@ -1,7 +1,5 @@
 # 🛡️ Security Fundamentals: The Foundation of Cyber Defense
 
----
----
 
 ## 🧠 Soft Skills: The Human Element
 
