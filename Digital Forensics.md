@@ -1,5 +1,4 @@
 # 🕵️‍♂️ Digital Forensics & DFIR  
-*Modern, Practical Guide for SOC & IR Teams*
 
 ---
 
