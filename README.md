@@ -33,8 +33,3 @@ The notebook is organized by topic to make it easy to find what you're looking f
 ### 🚀 Getting Started
 
 This repository is for informational purposes. Feel free to explore the notes and use them as a reference in your own journey.
-
-To clone the repository and view the files locally, use the following command:
-
-```bash
-git clone [https://github.com/Kan4sS/Cyber-Analyst-Notebook.git](https://github.com/Kan4sS/Cyber-Analyst-Notebook.git)
