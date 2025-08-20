@@ -1,6 +1,5 @@
 # 🛡️ Threat Intelligence for SOC Teams
 
----
 
 ## 🚩 Introduction to Threat Intelligence
 
