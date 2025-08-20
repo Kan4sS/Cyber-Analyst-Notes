@@ -1,0 +1,160 @@
+This is a fantastic collection of notes! 
+I've organized them into a structured and logical format that should make studying much easier. 
+I've grouped related topics, used clear headings, and highlighted key terms. 
+I've also put all your references in one clean, easy-to-find section at the end.
+
+# Cybersecurity Intelligence
+
+Types of Intelligence
+
+    OSINT (Open-Source Intelligence)
+
+        Intelligence gathered from publicly available sources.
+        Sources include alternative names, tools, and malware used, targeted organizations, motives, and indicators of compromise (IOCs).
+
+    HUMINT (Human Intelligence)
+
+        Intelligence gathered from human sources.
+        Requires understanding human behavior, emotions, and motivations.
+
+    GEOINT (Geospatial Intelligence)
+
+        Intelligence gathered from a geographic perspective (e.g., satellite imagery, aerial photos).
+        Used in contexts like natural disasters, wartime, and political turmoil.
+
+Key Concepts & Frameworks
+
+    TTPs (Tactics, Techniques, and Procedures)
+
+        A high-level description of how a threat actor operates.
+
+    MITRE ATT&CK Framework
+
+        A knowledge base of adversary tactics and techniques based on real-world observations.
+        Contains over 260 techniques split into 12 categories:
+
+            Initial Access           Execution            Persistence            
+            Privilege Escalation            Defense Evasion            Credential Access
+            Discovery            Lateral Movement            Collection            
+            Command and Control            Exfiltration            Impact
+
+    Threat Intelligence Protocols
+
+        TLP (Traffic Light Protocol): A standard for sharing sensitive information securely.
+        PAP (Permissible Action Protocol): A protocol for defining what actions can be taken with shared information.
+
+Digital Forensics
+
+Core Concepts
+
+    Data Representation
+
+        Understanding different data formats is crucial for forensic investigations.
+        Formats to know: Binary, Base64, Hexadecimal, Octal, and ASCII.
+
+    Filesystems
+
+        A set of data types used for data storage, categorization, management, navigation, and recovery.
+        To view filesystems on Windows: Press Win + R and type diskmgmt.msc.
+
+        Common Filesystem Types: FAT16, FAT32, NTFS, EXT3/EXT4.
+
+Order of Volatility
+
+    A list of evidence to be collected in a specific order, from most volatile to least volatile.
+
+        Registers & Cache: Extremely volatile; data is constantly changing.
+
+        Memory (RAM): Lost if power is disconnected; contains useful data about processes and connections.
+
+        Disk (HDD and SSD): Data can be overwritten; less volatile than memory. SSDs have a risk of Garbage Collection/TRIM.
+
+        Remote Logging and Monitoring Data: Less critical but still high volatility.
+
+        Physical Configuration, Network Topology, Archival Media: Least volatile and less time-sensitive.
+
+Forensic Tools & Techniques
+
+    Chain of Custody
+
+        A critical process for documenting the handling of evidence.
+
+        Lack of proper documentation can lead to evidence being dismissed in court.
+
+    Data Acquisition & Hashing
+
+        Disk Imager: FTK Imager
+
+        Hashing: Used to ensure the integrity of evidence.
+
+            Windows: Get-FileHash <file>
+
+            Linux: md5sum <file>, sha256sum <file>, sha1sum <file>
+
+    Specialist Equipment
+
+        Wireless Stronghold/Faraday Boxes: Block wireless signals to prevent remote wiping.
+
+        Specialized Write-Blockers: Prevent data from being altered on a device.
+
+        Phone Jammers: Similar to Faraday boxes.
+
+        Dedicated Flash Drives: Contain forensic tools like Encase and FTK.
+
+    Data Destruction Methods
+
+        Degaussing, File Shredding, Physical Shredding, Hydraulic Crusher, Overwriting.
+
+    Linux Command-Line Tools
+
+        ls -lisap <file> and stat <file>: Get file metadata.
+
+        exiftool <filename>: View metadata of files (e.g., author of a PDF, camera details of a JPG).
+
+        scalpel: A file carving tool to recover deleted files.
+
+            Example Usage: scalpel -c /etc/scalpel/scalpel.conf -o carved_images Carve1.img
+
+        chown: Change file ownership.
+
+        md5sum: Calculate the MD5 hash of a file.
+
+Windows Artifact Analysis
+
+    Tools:
+
+        KAPE: Kroll Artifact Parser and Extractor.
+
+        Windows File Analyzer: A tool to view files in a human-readable format.
+
+        PECmd.exe (Prefetch Explorer Command Line): To analyze Prefetch files.
+
+        JumpList Explorer: To analyze Jump List files.
+
+        Browser History Viewer: For analyzing web browser history.
+
+        Browser History Capturer: For live acquisition of browser history.
+
+    Artifact Locations:
+
+        LNK Files: C:\Users\$USER$\AppData\Roaming\Microsoft\Windows\Recent
+
+        Prefetch Files: C:\Windows\Prefetch
+
+        Jump List Files: C:\Users\%USERNAME%\AppData\Roaming\Microsoft\Windows\Recent\AutomaticDestinations and ...CustomDestinations
+
+    Browser Forensics (Live Acquisition):
+
+        Look for artifacts like cookies, favorites, downloaded files, URLs visited, searches, and cached content.
+
+Additional Files & Commands
+
+    Pagefile.sys and hiberfil.sys: Windows system files that store temporary data.
+
+    Linux Swap File:
+
+        sudo fallocate -l [file size] /swapfile
+
+        free -h: Check memory breakdown.
+
+        swapon --show: Identify swap space.
