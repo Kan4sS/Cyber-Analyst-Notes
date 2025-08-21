@@ -12,7 +12,8 @@
 
 ### 📝 About the Notebook
 
-Welcome! This repository serves as my personal cyber analyst notebook—a centralized space to store and organize notes, practical guides, and key concepts related to cybersecurity. This isn't a comprehensive course, but rather a reflection of my learning journey, intended to be a quick-reference guide built from my own research and hands-on experience.
+Welcome! This repository serves as my personal cyber analyst notebook a centralized space to store and organize notes, practical guides, and key concepts related to cybersecurity. 
+This isn't a comprehensive course, but rather a reflection of my learning journey, intended to be a quick-reference guide built from my own research and hands-on experience.
 
 The content is designed to be concise and easy to navigate, focusing on the core principles and techniques I've encountered in my studies and practice.
 
