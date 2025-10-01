@@ -1,14 +1,4 @@
-# 🛡️ BTL1 Practical Study Guide
-
-A hands-on guide designed for aspiring Security Operations Center (SOC) analysts. This resource focuses on the practical skills and tools essential for the Security Blue Team Level 1 (BTL1) certification exam.
-
-The BTL1 exam is a real-world simulation your ability to apply knowledge and tools to an incident is key. Let's get ready.
-
----
-
-## 🎯 Exam Domains
-
-The BTL1 certification is built around six core domains. This guide provides a breakdown of each, with a focus on actionable skills and resources.
+# 🛡️ 6 core domains. This guide provides a breakdown of each, with a focus on actionable skills and resources.
 
 -   🕵️ **Phishing Analysis**
 -   🧠 **Threat Intelligence**
